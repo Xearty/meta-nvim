@@ -10,21 +10,9 @@ return {
                 "nvim-telescope/telescope.nvim" -- Optional
             },
             opts = { lsp = { auto_attach = true } }
-        }
+        },
     },
     config = function()
-        -- Setup language servers.
-        local lspconfig = require('lspconfig')
-
-        lspconfig.tsserver.setup {}
-        lspconfig.rust_analyzer.setup {
-            -- Server-specific settings. See `:help lspconfig-setup`
-            settings = {
-                ['rust-analyzer'] = {},
-            },
-        }
-        lspconfig.clangd.setup {}
-
         -- Global mappings.
         -- See `:help vim.diagnostic.*` for documentation on any of the below functions
         -- vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
@@ -37,9 +25,6 @@ return {
         vim.api.nvim_create_autocmd('LspAttach', {
             group = vim.api.nvim_create_augroup('UserLspConfig', {}),
             callback = function(ev)
-                -- local navbuddy = require("nvim-navbuddy")
-                -- navbuddy.attach(client, bufnr)
-
                 -- Enable completion triggered by <c-x><c-o>
                 vim.bo[ev.buf].omnifunc = 'v:lua.vim.lsp.omnifunc'
 
