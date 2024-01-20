@@ -29,7 +29,6 @@ vim.o.mousemodel = 'extend'
 vim.o.cursorline = true
 
 vim.o.background = 'dark'
-vim.cmd [[colorscheme rose-pine]]
 
 vim.cmd [[
     nnoremap <silent> } :<C-u>execute "keepjumps norm! " . v:count1 . "}"<CR>

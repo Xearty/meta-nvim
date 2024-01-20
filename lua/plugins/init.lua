@@ -9,7 +9,6 @@ if vim.fn.has("nvim-0.9.0") == 0 then
 end
 
 return {
-    { "rose-pine/neovim", name = "rose-pine" },
     { "numToStr/Comment.nvim", config = true },
     { "kylechui/nvim-surround", version = "*", config = true },
     { "williamboman/mason.nvim", config = true },
