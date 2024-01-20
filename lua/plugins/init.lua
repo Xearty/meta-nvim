@@ -16,4 +16,5 @@ return {
     { "RRethy/vim-illuminate", config = function() require("illuminate").configure {} end },
     { "windwp/nvim-autopairs", config = true },
     { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {}, config = true },
+    { "numToStr/FTerm.nvim", config = true },
 }
