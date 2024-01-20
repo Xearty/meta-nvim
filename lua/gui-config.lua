@@ -1,5 +1,5 @@
 vim.o.guifont = 'Liberation Mono:h10'
-vim.o.guicursor = ''
+-- vim.o.guicursor = ''
 vim.g.neovide_cursor_animation_length = 0.03
 
 if vim.g.neovide == true then
