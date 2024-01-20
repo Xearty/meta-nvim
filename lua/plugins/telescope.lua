@@ -11,8 +11,9 @@ return {
         },
     },
     config = function()
+        local telescope = require("telescope")
         local actions = require("telescope.actions")
-        require("telescope").setup{
+        telescope.setup{
             defaults = {
                 mappings = {
                     i = {
@@ -22,5 +23,6 @@ return {
                 },
             }
         }
+        telescope.load_extension("notify")
     end,
 }
