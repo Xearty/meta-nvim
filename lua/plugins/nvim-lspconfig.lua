@@ -2,14 +2,9 @@ return {
     "neovim/nvim-lspconfig",
     dependencies = {
         {
-            "SmiteshP/nvim-navbuddy",
-            dependencies = {
-                "SmiteshP/nvim-navic",
-                "MunifTanjim/nui.nvim",
-                "numToStr/Comment.nvim",        -- Optional
-                "nvim-telescope/telescope.nvim" -- Optional
-            },
-            opts = { lsp = { auto_attach = true } }
+            "folke/neodev.nvim",
+            opts = {},
+            config = true,
         },
     },
     config = function()
