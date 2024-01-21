@@ -73,3 +73,11 @@ autocmd({ "BufWritePre" }, {
     pattern = "*",
     command = [[%s/\s\+$//e]],
 })
+
+-- highlight the line number for diagnostics and don't display any text
+vim.cmd [[
+    sign define DiagnosticSignError text= texthl=DiagnosticSignError linehl= numhl=DiagnosticSignError
+    sign define DiagnosticSignWarn text= texthl=DiagnosticSignWarn linehl= numhl=DiagnosticSignWarn
+    sign define DiagnosticSignInfo text= texthl=DiagnosticSignInfo linehl= numhl=DiagnosticSignInfo
+    sign define DiagnosticSignHint text= texthl=DiagnosticSignHint linehl= numhl=DiagnosticSignHint
+]]
