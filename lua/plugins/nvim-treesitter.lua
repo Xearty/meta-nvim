@@ -29,7 +29,8 @@ return {
                         if name:find("goto") == 1 then
                             move[name] = function(q, ...)
                                 if vim.wo.diff then
-                                    local config = configs.get_module("textobjects.move")[name] ---@type table<string,string>
+                                    local config = configs.get_module("textobjects.move")
+                                    [name] ---@type table<string,string>
                                     for key, query in pairs(config or {}) do
                                         if q == query and key:find("[%]%[][cC]") then
                                             vim.cmd("normal! " .. key)
@@ -47,7 +48,7 @@ return {
         cmd = { "TSUpdateSync", "TSUpdate", "TSInstall" },
         keys = {
             { "<c-space>", desc = "Increment selection" },
-            { "<bs>", desc = "Decrement selection", mode = "x" },
+            { "<bs>",      desc = "Decrement selection", mode = "x" },
         },
         ---@type TSConfig
         ---@diagnostic disable-next-line: missing-fields
@@ -118,31 +119,6 @@ return {
             end
             require("nvim-treesitter.configs").setup(opts)
         end,
-    },
-
-    -- Show context of the current function
-    {
-        "nvim-treesitter/nvim-treesitter-context",
-        -- event = "LazyFile",
-        event = "VeryLazy",
-        enabled = true,
-        opts = { mode = "cursor", max_lines = 3 },
-        keys = {
-            {
-                "<leader>ut",
-                function()
-                    local Util = require("lazyvim.util")
-                    local tsc = require("treesitter-context")
-                    tsc.toggle()
-                    if Util.inject.get_upvalue(tsc.toggle, "enabled") then
-                        Util.info("Enabled Treesitter Context", { title = "Option" })
-                    else
-                        Util.warn("Disabled Treesitter Context", { title = "Option" })
-                    end
-                end,
-                desc = "Toggle Treesitter Context",
-            },
-        },
     },
 
     -- Automatically add closing tags for HTML and JSX
