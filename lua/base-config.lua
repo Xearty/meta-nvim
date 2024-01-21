@@ -14,7 +14,7 @@ vim.o.smartcase = true
 vim.o.ignorecase = true
 vim.o.number = true
 vim.o.relativenumber = true
-vim.o.titlestring= '%t'
+vim.o.titlestring = '%t'
 vim.o.title = true
 vim.o.swapfile = false
 vim.o.backup = false
@@ -27,6 +27,7 @@ vim.o.signcolumn = 'yes'
 vim.o.foldenable = false
 vim.o.mousemodel = 'extend'
 vim.o.cursorline = true
+vim.o.pumblend = 20
 
 vim.o.background = 'dark'
 
@@ -67,9 +68,8 @@ autocmd('TextYankPost', {
     end,
 })
 
-autocmd({"BufWritePre"}, {
+autocmd({ "BufWritePre" }, {
     group = general_group,
     pattern = "*",
     command = [[%s/\s\+$//e]],
 })
-
