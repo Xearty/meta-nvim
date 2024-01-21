@@ -16,6 +16,7 @@ return {
 
         -- Only setup language servers that are not installed through mason
         lspconfig.clangd.setup {}
+        lspconfig.nixd.setup {}
 
         -- Global mappings.
         -- See `:help vim.diagnostic.*` for documentation on any of the below functions
