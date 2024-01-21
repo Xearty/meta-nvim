@@ -3,6 +3,10 @@ return {
     dependencies = {
         {
             "folke/neodev.nvim",
+            dependencies = {
+                "hrsh7th/vim-vsnip",
+                "hrsh7th/vim-vsnip-integ",
+            },
             opts = {},
             config = true,
         },
