@@ -1,5 +1,6 @@
 return {
-    { "williamboman/mason.nvim", config = true },
+    {
+        "williamboman/mason.nvim", config = true },
     {
         "williamboman/mason-lspconfig.nvim",
         dependencies = {
@@ -10,7 +11,7 @@ return {
             local mason_lspconfig = require("mason-lspconfig")
 
             local handlers = {
-                function (server_name) -- default handler (optional)
+                function(server_name)  -- default handler (optional)
                     require("lspconfig")[server_name].setup {}
                 end,
             }
@@ -18,7 +19,7 @@ return {
             mason_lspconfig.setup {
                 handlers = handlers,
                 ensure_installed = {
-                    "lua_ls", "rust_analyzer@nightly", "clangd", "tsserver"
+                    "lua_ls", "rust_analyzer@nightly", "tsserver"
                 },
             }
             mason_lspconfig.setup_handlers(handlers)
