@@ -28,6 +28,7 @@ vim.o.foldenable = false
 vim.o.mousemodel = 'extend'
 vim.o.cursorline = true
 vim.o.pumblend = 20
+vim.o.showcmd = false
 
 vim.o.background = 'dark'
 
@@ -40,6 +41,8 @@ vim.keymap.set('n', '<C-h>', '<C-w><C-h>', {})
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', {})
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', {})
 vim.keymap.set('n', '<C-l>', '<C-w><C-l>', {})
+
+vim.keymap.set('n', '<C-s>', ':w<CR>', { silent = true })
 
 vim.cmd [[
     " trigger `autoread` when files changes on disk
