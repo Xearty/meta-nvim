@@ -13,7 +13,7 @@ return {
     config = function()
         local telescope = require("telescope")
         local actions = require("telescope.actions")
-        telescope.setup{
+        telescope.setup {
             defaults = {
                 mappings = {
                     i = {
@@ -23,6 +23,6 @@ return {
                 },
             }
         }
-        telescope.load_extension("notify")
+        -- telescope.load_extension("notify") -- needed for noice.nvim
     end,
 }
