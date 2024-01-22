@@ -13,6 +13,9 @@ return {
         local cmp = require("cmp")
 
         cmp.setup({
+            experimental = {
+                ghost_text = true,
+            },
             formatting = {
                 format = require("lspkind").cmp_format {
                     mode = 'symbol', -- show only symbol annotations
