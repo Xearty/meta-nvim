@@ -14,6 +14,10 @@ return {
     config = function()
         local lspconfig = require("lspconfig")
 
+        vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
+            border = "rounded",
+        })
+
         -- Only setup language servers that are not installed through mason
         lspconfig.clangd.setup {}
         lspconfig.nixd.setup {}
