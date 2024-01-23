@@ -15,4 +15,5 @@ return {
     { "windwp/nvim-autopairs",               config = true },
     { "lukas-reineke/indent-blankline.nvim", main = "ibl",                                              opts = {},    config = true },
     { "numToStr/FTerm.nvim",                 config = true },
+    { "rainbowhxch/beacon.nvim" }
 }
