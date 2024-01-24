@@ -9,11 +9,10 @@ if vim.fn.has("nvim-0.9.0") == 0 then
 end
 
 return {
-    { "numToStr/Comment.nvim",               config = true },
-    { "kylechui/nvim-surround",              version = "*",                                             config = true },
-    { "RRethy/vim-illuminate",               config = function() require("illuminate").configure {} end },
-    { "windwp/nvim-autopairs",               config = true },
-    { "lukas-reineke/indent-blankline.nvim", main = "ibl",                                              opts = {},    config = true },
-    { "numToStr/FTerm.nvim",                 config = true },
+    { "numToStr/Comment.nvim",  config = true },
+    { "kylechui/nvim-surround", version = "*",                                             config = true },
+    { "RRethy/vim-illuminate",  config = function() require("illuminate").configure {} end },
+    { "windwp/nvim-autopairs",  config = true },
+    { "numToStr/FTerm.nvim",    config = true },
     { "rainbowhxch/beacon.nvim" }
 }
