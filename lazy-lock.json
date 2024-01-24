@@ -40,6 +40,7 @@
   "plenary.nvim": { "branch": "master", "commit": "55d9fe89e33efd26f532ef20223e5f9430c8b0c0" },
   "rose-pine": { "branch": "main", "commit": "2a4aad89a803c84d7d1555d136639cd48ade1d64" },
   "telescope.nvim": { "branch": "master", "commit": "24778fd72fcf39a0b1a6f7c6f4c4e01fef6359a2" },
+  "tabby.nvim": { "branch": "main", "commit": "55712426431b12beae5f12e731cfb1d707632a3d" },
   "tint.nvim": { "branch": "master", "commit": "862835626941d263466754b9c8e2ce2cb004f5ac" },
   "tokyonight.nvim": { "branch": "main", "commit": "67c6050e1ca41260c919236a098ba278472c7520" },
   "trouble.nvim": { "branch": "main", "commit": "f1168feada93c0154ede4d1fe9183bf69bac54ea" },
