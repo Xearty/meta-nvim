@@ -29,8 +29,12 @@ vim.o.mousemodel = 'extend'
 vim.o.cursorline = true
 vim.o.pumblend = 20
 vim.o.showcmd = false
+vim.o.laststatus = 3
+vim.o.noshowmode = true
 
 vim.o.background = 'dark'
+
+vim.cmd [[ highlight WinSeparator guibg=None ]]
 
 vim.cmd [[
     nnoremap <silent> } :<C-u>execute "keepjumps norm! " . v:count1 . "}"<CR>
