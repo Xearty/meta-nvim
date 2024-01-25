@@ -1,6 +1,7 @@
-return {
-    "vigoux/notifier.nvim",
-    config = function()
-        require("notifier").setup {}
-    end
-}
+return {}
+-- return {
+--     "vigoux/notifier.nvim",
+--     config = function()
+--         require("notifier").setup {}
+--     end
+-- }
