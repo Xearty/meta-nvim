@@ -14,5 +14,6 @@ return {
     { "RRethy/vim-illuminate",  config = function() require("illuminate").configure {} end },
     { "windwp/nvim-autopairs",  config = true },
     { "numToStr/FTerm.nvim",    config = true },
-    { "rainbowhxch/beacon.nvim" }
+    { "rainbowhxch/beacon.nvim" },
+    { 'jghauser/mkdir.nvim' },
 }

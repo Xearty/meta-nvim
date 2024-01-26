@@ -4,6 +4,7 @@ return {
     dependencies = {
         "nvim-lua/plenary.nvim",
         { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
+        "desdic/telescope-rooter.nvim",
     },
     keys = {
         {
@@ -87,9 +88,15 @@ return {
                     case_mode = "smart_case",       -- or "ignore_case" or "respect_case"
                     -- the default case_mode is "smart_case"
                 },
+                rooter = {
+                    enable = true,
+                    patterns = { ".git" },
+                    debug = false,
+                }
             },
         }
         telescope.load_extension("fzf")
+        telescope.load_extension("rooter")
         telescope.load_extension("notify") -- needed for noice.nvim
     end,
 }

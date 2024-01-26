@@ -32,6 +32,7 @@ vim.o.showcmd = false
 vim.o.laststatus = 3
 vim.o.noshowmode = true
 vim.o.cmdheight = 0
+vim.o.splitright = true
 
 vim.o.background = 'dark'
 
