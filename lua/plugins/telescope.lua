@@ -67,6 +67,16 @@ return {
             function() require("telescope.builtin").lsp_implementations() end,
             desc = "LSP implementations",
         },
+        {
+            "<leader>fcc",
+            function() require("telescope.builtin").git_commits() end,
+            desc = "Find git commits",
+        },
+        {
+            "<leader>fcb",
+            function() require("telescope.builtin").git_bcommits() end,
+            desc = "Find git commits in current branch",
+        },
     },
     config = function()
         local telescope = require("telescope")
