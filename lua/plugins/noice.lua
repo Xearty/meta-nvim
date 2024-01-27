@@ -31,6 +31,8 @@ return {
                             { find = "%d+L, %d+B" },
                             { find = "; after #%d+" },
                             { find = "; before #%d+" },
+                            { find = "Already at oldest change" },
+                            { find = "Already at newest change" },
                             { find = "written" },
                         },
                     },
