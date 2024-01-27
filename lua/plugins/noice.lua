@@ -27,8 +27,12 @@ return {
                 {
                     filter = {
                         event = "msg_show",
-                        kind = "",
-                        find = "written",
+                        any = {
+                            { find = "%d+L, %d+B" },
+                            { find = "; after #%d+" },
+                            { find = "; before #%d+" },
+                            { find = "written" },
+                        },
                     },
                     opts = { skip = true },
                 },
