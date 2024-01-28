@@ -16,6 +16,7 @@ vim.o.number = true
 vim.o.relativenumber = true
 vim.o.titlestring = '%t'
 vim.o.title = true
+vim.o.undofile = true
 vim.o.swapfile = false
 vim.o.backup = false
 vim.o.hidden = true
