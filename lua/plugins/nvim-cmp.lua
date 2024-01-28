@@ -8,7 +8,6 @@ return {
         "hrsh7th/cmp-cmdline",
         "hrsh7th/nvim-cmp",
         "onsails/lspkind.nvim", -- icons
-        "hrsh7th/cmp-nvim-lsp-signature-help"
     },
     config = function()
         local cmp = require("cmp")
@@ -50,7 +49,6 @@ return {
             }),
             sources = cmp.config.sources({
                 { name = 'nvim_lsp' },
-                { name = 'nvim_lsp_signature_help' },
                 -- { name = 'luasnip' }, -- For luasnip users.
                 -- { name = 'ultisnips' }, -- For ultisnips users.
                 -- { name = 'snippy' }, -- For snippy users.
