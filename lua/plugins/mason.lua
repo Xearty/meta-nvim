@@ -19,7 +19,7 @@ return {
             mason_lspconfig.setup {
                 handlers = handlers,
                 ensure_installed = {
-                    "lua_ls", "rust_analyzer@nightly", "tsserver",
+                    "lua_ls", "rust_analyzer@nightly", "tsserver", "gopls"
                 },
             }
             mason_lspconfig.setup_handlers(handlers)
