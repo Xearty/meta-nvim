@@ -18,4 +18,5 @@ return {
     { "jghauser/mkdir.nvim" },
     { "gbprod/stay-in-place.nvim", config = true },
     { "nacro90/numb.nvim",         config = true },
+    { "nmac427/guess-indent.nvim", config = true },
 }
