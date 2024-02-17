@@ -64,6 +64,11 @@ return {
             desc = "LSP definitions",
         },
         {
+            "<C-LeftMouse",
+            function() require("telescope.builtin").lsp_definitions() end,
+            desc = "LSP definitions",
+        },
+        {
             "gi",
             function() require("telescope.builtin").lsp_implementations() end,
             desc = "LSP implementations",
