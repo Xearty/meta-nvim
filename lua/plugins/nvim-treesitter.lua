@@ -84,6 +84,7 @@ return {
                 "glsl",
                 "haskell",
                 "nix",
+                "go",
             },
             incremental_selection = {
                 enable = true,
